@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "proyectos-noticias"
+  },
+  "targets": {
+    "proyectos-noticias": {
+      "hosting": {
+        "fablog": [
+          "fablog"
+        ]
+      }
+    }
+  }
+}
