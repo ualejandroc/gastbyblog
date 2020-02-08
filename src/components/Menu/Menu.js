@@ -6,6 +6,15 @@ import { FaHome } from "react-icons/fa/";
 import { FaSearch } from "react-icons/fa/";
 import { FaEnvelope } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
+import {FaLightbulb} from "react-icons/fa/";
+import {FaFileInvoice} from "react-icons/fa/";
+import {FaCommentDots} from "react-icons/fa/";
+import {FaMedal} from "react-icons/fa/";
+
+
+
+
+
 
 import Item from "./Item";
 import Expand from "./Expand";
@@ -28,7 +37,7 @@ class Menu extends React.Component {
     this.items = [
       { to: "/", label: "Home", icon: FaHome },
       { to: "/category/", label: "Categories", icon: FaTag },
-      { to: "/search/", label: "Search", icon: FaSearch },
+      // { to: "/search/", label: "Search", icon: FaSearch },
       // ...pages,
       { to: "/contact/", label: "Contact", icon: FaEnvelope }
     ];
@@ -249,11 +258,28 @@ class Menu extends React.Component {
                   cat= cat + "-" +  category.split(" ")[i] 
                 }
               }
+              ////////
+              let icons=''
+              if(cat.toLowerCase()=='ideas'){
+                icons=FaLightbulb
+              }
                
+              if(cat.toLowerCase()=='guides'){
+                icons=FaFileInvoice
+              }
+               
+              if(cat.toLowerCase()=='tips'){
+                icons=FaCommentDots
+              }
+               
+              if(cat.toLowerCase()=='inspiration'){
+                icons=FaMedal
+              }
+               /////////
             this.items.splice(1,0,{
               to: "/category/" + cat.toLowerCase(),
               label: category,
-              icon: FaHome
+              icon: icons
             });
           })}
         </div>
