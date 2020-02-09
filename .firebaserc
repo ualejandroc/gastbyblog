@@ -5,8 +5,8 @@
   "targets": {
     "proyectos-noticias": {
       "hosting": {
-        "fablog": [
-          "fablog"
+        "entrepreneurs": [
+          "entrepreneurs"
         ]
       }
     }

@@ -30,8 +30,9 @@ export default class HTML extends React.Component {
           <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
         
-          <script data-ad-client="ca-pub-2616866305062778" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+         <script data-ad-client="ca-pub-2616866305062778" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
+         
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

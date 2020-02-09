@@ -67,7 +67,7 @@
     "lint": "eslint src/**/*.{js,jsx}",
     "stylelint": "stylelint src/**/*.js",
     "generate-app-icons": "sh ./scripts/generate-app-icons.sh",
-    "firebase":"firebase deploy --only hosting:fablog"
+    "firebase":"firebase deploy --only hosting:entrepreneurs"
   },
   "devDependencies": {
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.2.0",

@@ -1,8 +1,8 @@
 {
   "hosting": [{
     "public": "public",
-    "site": "fablog",
-    "target":"fablog",
+    "site": "entrepreneurs",
+    "target":"entrepreneurs",
     "ignore": [
       "firebase.json",
       "**/.*",
